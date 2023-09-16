@@ -12,7 +12,7 @@ print("Вы живете в",c)
 t = int(input())
 x = int(input())
 num = 9 * math.pi * t + 10 * math.cos(x)
-den = math.sqrt(t) - math.sqrt(math.pow(math.sin(t), 2))
+den = math.sqrt(t) - math.fabs(math.sin(t))
 mult = math.pow(math.e, x)
 z = num / den * mult
 print(round(z, 2))
