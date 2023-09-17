@@ -3,7 +3,9 @@ import math
 # №1
 r = float(input('Введите радиус: '))
 a = 2 * math.pi * r
+s = math.pi * r * r
 print(round(a, 2))
+print(round(s, 2))
 
 # №2
 x = 10
