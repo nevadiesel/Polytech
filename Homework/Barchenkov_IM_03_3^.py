@@ -8,16 +8,15 @@ for i in range(0, len(result), 5):
 
 
 # Рамочка
-m, n, nn = int(input("Горизонталь: ")), int(input("Вертикаль: ")), 0
-if m == 0 or n == 0:
-    print("Error.")
-else:
+m, n, i = int(input("Горизонталь: ")), int(input("Вертикаль: ")), 0
+if m > 0 and n > 0:
     space = (m - 2) * " "
     print(m*"@")
-    while nn < n - 2:
+    for i in range(n - 2):
         print(f"@{space}@")
-        nn += 1
     print(m*"@") if n != 1 else 0
+else:
+    print("Error.")
 
 
 # Задание №1
